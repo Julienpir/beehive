@@ -253,8 +253,8 @@ try :
                     hive.append(kp.pt)
             else :
                 # MUNKRES assignment, slightly better
-                freeBees = [True for i in xrange(len(bees))]
-                freeKP = [True for i in xrange(len(keypoints))]
+                freeBees = [True for i in range(len(bees))]
+                freeKP = [True for i in range(len(keypoints))]
                 # build cost matrix 
                 cost = np.zeros((len(keypoints), len(bees)))
                 for i,kp in enumerate(keypoints):
